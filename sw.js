@@ -1,12 +1,22 @@
-const CACHE_NAME = "vku-field-survey-v1";
+const CACHE_NAME = "vku-field-survey-v2";
 
 const FILES_TO_CACHE = [
     "./",
     "./index.html",
     "./css/style.css",
+
     "./js/app.js",
-    "./manifest.json"
+    "./js/camera.js",
+    "./js/db.js",
+    "./js/location.js",
+    "./js/sync.js",
+
+    "./manifest.json",
+
+    "./assets/icons/icon-192.png",
+    "./assets/icons/icon-512.png"
 ];
+
 
 self.addEventListener("install", (event) => {
 
@@ -50,11 +60,19 @@ self.addEventListener("fetch", (event) => {
     event.respondWith(
         caches.match(event.request)
             .then((cachedResponse) => {
+
                 if (cachedResponse) {
                     return cachedResponse;
                 }
 
-                return fetch(event.request);
+                return fetch(event.request)
+                    .catch(() => {
+                        return new Response("", {
+                            status: 503,
+                            statusText: "Offline"
+                        });
+                    });
+
             })
     );
 });

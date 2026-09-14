@@ -79,6 +79,7 @@ Cài đặt ứng dụng trên điện thoại thông qua PWA.
 │ Google Sheets│ │ Google Drive │
 │   Dữ liệu    │ │    Hình ảnh  │
 └──────────────┘ └──────────────┘
+
 ## 4. Dữ liệu khảo sát
 
 Mỗi phiên khảo sát có thể bao gồm các thông tin:
@@ -194,3 +195,5 @@ Trong tương lai có thể mở rộng:
 * Bản đồ hiển thị vị trí khảo sát.
 * Cải thiện cơ chế xử lý xung đột dữ liệu.
 * Đồng bộ với backend chuyên dụng thay cho Google Apps Script.
+
+
