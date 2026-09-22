@@ -2,38 +2,38 @@
 // KIỂM TRA ĐĂNG NHẬP
 // ===============================
 
-const savedUser =
-    localStorage.getItem("googleUser");
+// const savedUser =
+//     localStorage.getItem("googleUser");
 
-if (!savedUser) {
+// if (!savedUser) {
 
-    window.location.href = "index.html";
+//     window.location.href = "index.html";
 
-}
+// }
 
 
-// ===============================
-// HIỂN THỊ THÔNG TIN USER
-// ===============================
+// // ===============================
+// // HIỂN THỊ THÔNG TIN USER
+// // ===============================
 
-try {
+// try {
 
-    const user =
-        JSON.parse(savedUser);
+//     const user =
+//         JSON.parse(savedUser);
 
-    document.getElementById(
-        "dashboardUser"
-    ).textContent =
-        `👤 ${user.name} (${user.email})`;
+//     document.getElementById(
+//         "dashboardUser"
+//     ).textContent =
+//         `👤 ${user.name} (${user.email})`;
 
-} catch (error) {
+// } catch (error) {
 
-    console.error(
-        "Không thể đọc thông tin người dùng:",
-        error
-    );
+//     console.error(
+//         "Không thể đọc thông tin người dùng:",
+//         error
+//     );
 
-}
+// }
 
 
 // ===============================
