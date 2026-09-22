@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta name="theme-color" content="#2563eb">
+
+    <title>VKU Field Survey - Tổng quan</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+
+<body>
+
+<header class="header">
+
+    <h1>VKU Field Survey</h1>
+
+    <p>
+        Điều tra nhu cầu việc làm của sinh viên
+    </p>
+
+</header>
+
+<main class="container dashboard-page">
+
+    <!-- User -->
+    <section class="dashboard-user card">
+        <div class="user-info">
+            <div class="user-avatar">👤</div>
+
+            <div>
+                <span class="welcome-text">Xin chào 👋</span>
+                <div id="dashboardUser"></div>
+            </div>
+        </div>
+
+        <button
+            type="button"
+            id="logoutBtn"
+            class="logout-btn">
+            Đăng xuất
+        </button>
+    </section>
+
+
+    <!-- Statistics -->
+    <section class="dashboard-section">
+
+        <div class="section-heading">
+            <div>
+                <span class="section-label">TỔNG QUAN</span>
+                <h2>Trạng thái khảo sát</h2>
+            </div>
+        </div>
+
+        <div class="stats">
+
+            <div class="stat-card stat-synced">
+                <div class="stat-icon">✓</div>
+
+                <div class="stat-content">
+                    <strong id="syncedCount">0</strong>
+                    <span>Đã đồng bộ</span>
+                </div>
+            </div>
+
+
+            <div class="stat-card stat-pending">
+                <div class="stat-icon">◷</div>
+
+                <div class="stat-content">
+                    <strong id="pendingCount">0</strong>
+                    <span>Chưa đồng bộ</span>
+                </div>
+            </div>
+
+
+            <div class="stat-card stat-syncing">
+                <div class="stat-icon">↻</div>
+
+                <div class="stat-content">
+                    <strong id="syncingCount">0</strong>
+                    <span>Đang đồng bộ</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Create survey -->
+    <section class="create-survey-card">
+
+        <div>
+            <span class="create-label">KHẢO SÁT HIỆN TRƯỜNG</span>
+
+            <h2>Tạo phiếu khảo sát mới</h2>
+
+            <p>
+                Ghi nhận thông tin nhu cầu việc làm
+                của sinh viên.
+            </p>
+        </div>
+
+        <button
+            type="button"
+            id="createSurveyBtn"
+            class="create-survey-btn">
+
+            <span>＋</span>
+            Tạo phiếu
+        </button>
+
+    </section>
+
+
+    <!-- Survey list -->
+    <section class="dashboard-section survey-section">
+
+        <div class="section-heading">
+
+            <div>
+                <span class="section-label">DỮ LIỆU</span>
+                <h2>Các phiếu khảo sát</h2>
+            </div>
+
+        </div>
+
+        <div id="surveyList">
+            <p>Đang tải...</p>
+        </div>
+
+    </section>
+
+</main>
+
+<script src="js/db.js"></script>
+<script src="js/sync.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>

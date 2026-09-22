@@ -1,0 +1,31 @@
+{
+  "name": "vku-field-survey",
+  "version": "1.0.0",
+  "description": "> **Mini-Project 1** — Môn học: **Cross-Platform Mobile App Development (VKU)**  \r > **Sinh viên thực hiện:** Nguyễn Thị Thanh Thảo \r > **Demo Live:** https://vku-field-survey.nguyenthao2005py.workers.dev/\r > **Repository:** https://github.com/nttthao2005/vku-field-survey",
+  "main": "sw.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nttthao2005/vku-field-survey.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/nttthao2005/vku-field-survey/issues"
+  },
+  "homepage": "https://github.com/nttthao2005/vku-field-survey#readme",
+  "dependencies": {
+    "@capacitor/android": "^8.5.2",
+    "@capacitor/camera": "^8.2.4",
+    "@capacitor/cli": "^8.5.2",
+    "@capacitor/core": "^8.5.2",
+    "@capawesome/capacitor-google-sign-in": "^0.1.4"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  }
+}
